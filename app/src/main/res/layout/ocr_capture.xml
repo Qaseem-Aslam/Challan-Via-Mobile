@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+    <ToggleButton
+        android:id="@+id/flash"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="Flash"
+        android:layout_alignParentRight="true"
+        />
+
+    <com.example.challanviamobile.ui.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.challanviamobile.ui.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.example.challanviamobile.ui.camera.CameraSourcePreview>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:id="@+id/capture"
+        android:layout_height="100dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/ic_menu_camera"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
